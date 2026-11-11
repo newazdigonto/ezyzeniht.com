@@ -64,18 +64,6 @@ export default function Home() {
                 Whether preparing a listing for market, resolving buyer repair requests, or managing vacant REO assets, our coordinated field network has you covered.
               </p>
             </div>
-
-            {/* DASHBOARD LINK FOR EASY EDITING */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => navigateTo('dashboard')}
-                title="Edit services & photos"
-                className="text-xs bg-slate-100 hover:bg-zenith-orange hover:text-navy-950 font-bold px-3 py-2 rounded-lg transition-colors flex items-center gap-1.5 text-slate-700 border border-slate-300"
-              >
-                <Sliders className="w-3.5 h-3.5" />
-                <span>Change Photos on Dashboard</span>
-              </button>
-            </div>
           </div>
 
           {/* CATEGORY TABS */}

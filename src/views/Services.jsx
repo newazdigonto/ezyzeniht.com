@@ -40,8 +40,8 @@ export default function Services() {
         subtitle="Explore our complete range of property preservation, turnover, maintenance, and Realtor support services with photo documentation."
         primaryCtaText="Request Service"
         primaryCtaLink="request-service"
-        secondaryCtaText="Admin Service Manager"
-        secondaryCtaLink="dashboard"
+        secondaryCtaText="Contact Team"
+        secondaryCtaLink="contact"
         initialImage={services[0]?.image || '/images/Securing-Service-740x556.jpg'}
         thumbnails={services.slice(0, 8).map(s => ({
           id: s.id,
@@ -54,19 +54,12 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-14 sm:py-18">
         
-        {/* HEADER BAR & ADMIN SHORTCUT */}
+        {/* HEADER BAR */}
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4 pb-4 border-b border-slate-200">
           <div>
             <h2 className="text-xl font-bold text-[#182333]">All Capabilities ({filtered.length} Services)</h2>
             <p className="text-xs text-slate-500">Filter by category or search specific trade work below</p>
           </div>
-          <button
-            onClick={() => navigateTo('dashboard')}
-            className="text-xs bg-white hover:bg-zenith-orange hover:text-navy-950 font-bold px-4 py-2 rounded-xl transition-all flex items-center gap-2 text-slate-700 border border-slate-300 shadow-soft"
-          >
-            <Sliders className="w-3.5 h-3.5 text-zenith-orange" />
-            <span>Manage Services & Photos</span>
-          </button>
         </div>
 
         {/* SEARCH & FILTERS BAR */}

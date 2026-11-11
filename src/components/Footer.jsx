@@ -164,15 +164,6 @@ export default function Footer() {
                   Contact & Dispatch Desk
                 </button>
               </li>
-              <li className="pt-2">
-                <button 
-                  onClick={() => navigateTo('login')} 
-                  className="inline-flex items-center gap-1.5 text-xs text-zenith-orange hover:text-white bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700 font-semibold hover:border-zenith-orange transition-all"
-                >
-                  <Sliders className="w-3.5 h-3.5" />
-                  <span>Portal Login (Admin • Vendor • Client)</span>
-                </button>
-              </li>
             </ul>
           </div>
 

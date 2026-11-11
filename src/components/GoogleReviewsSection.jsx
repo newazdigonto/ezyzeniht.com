@@ -51,14 +51,6 @@ export default function GoogleReviewsSection() {
                 Based on verified U.S. client partnerships
               </div>
             </div>
-            <button
-              onClick={() => navigateTo('dashboard')}
-              title="Manage reviews in Dashboard"
-              className="text-xs bg-slate-200/80 hover:bg-zenith-orange hover:text-navy-950 font-bold px-2.5 py-1.5 rounded-lg transition-colors flex items-center gap-1 text-slate-700 ml-2"
-            >
-              <Sliders className="w-3 h-3" />
-              <span>Manage</span>
-            </button>
           </div>
         </div>
 
@@ -136,13 +128,6 @@ export default function GoogleReviewsSection() {
             className="bg-zenith-orange hover:bg-zenith-orangeHover text-navy-950 font-bold px-7 py-3.5 rounded-xl text-sm transition-all shadow-accent"
           >
             Experience Our Service • Request Work Order
-          </button>
-          <button
-            onClick={() => navigateTo('dashboard')}
-            className="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-5 py-3.5 rounded-xl text-sm transition-all flex items-center gap-2 border border-slate-300"
-          >
-            <Sliders className="w-4 h-4 text-zenith-orange" />
-            <span>Add / Edit Reviews in Dashboard</span>
           </button>
         </div>
 

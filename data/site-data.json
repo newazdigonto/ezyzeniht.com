@@ -498,6 +498,15 @@
   ],
   "leads": [
     {
+      "id": "lead-1794399102042",
+      "createdAt": "2026-11-11T12:11:42.042Z",
+      "status": "New",
+      "name": "Test Visitor",
+      "phone": "0400 000 000",
+      "loanType": "First Home Buy ($450k - $750k)",
+      "source": "Hero form"
+    },
+    {
       "id": "lead-1794395378571",
       "createdAt": "2026-11-11T11:09:38.571Z",
       "status": "New",

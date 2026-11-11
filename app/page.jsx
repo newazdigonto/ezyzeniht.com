@@ -5,7 +5,7 @@ import { useSite } from '@/src/context/SiteContext';
 import Navbar from '@/src/components/Navbar';
 import Footer from '@/src/components/Footer';
 
-// Page Views
+// Public Page Views
 import Home from '@/src/views/Home';
 import About from '@/src/views/About';
 import Services from '@/src/views/Services';
@@ -15,10 +15,6 @@ import Coverage from '@/src/views/Coverage';
 import BecomeVendor from '@/src/views/BecomeVendor';
 import RequestService from '@/src/views/RequestService';
 import Contact from '@/src/views/Contact';
-import Dashboard from '@/src/views/Dashboard';
-import Login from '@/src/views/Login';
-import VendorPortal from '@/src/views/VendorPortal';
-import ClientPortal from '@/src/views/ClientPortal';
 
 import { CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 
@@ -43,14 +39,6 @@ export default function MainPage() {
         return <RequestService />;
       case 'contact':
         return <Contact />;
-      case 'dashboard':
-        return <Dashboard />;
-      case 'login':
-        return <Login />;
-      case 'vendor-portal':
-        return <VendorPortal />;
-      case 'client-portal':
-        return <ClientPortal />;
       case 'home':
       default:
         return <Home />;
@@ -92,7 +80,7 @@ export default function MainPage() {
         </div>
       )}
 
-      {currentPage !== 'dashboard' && <Footer />}
+      <Footer />
     </div>
   );
 }

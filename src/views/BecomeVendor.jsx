@@ -72,8 +72,8 @@ export default function BecomeVendor() {
         subtitle="We partner with reliable contractors, handymen, cleaning crews, lawn maintenance teams, and licensed specialty trades for steady work orders across the United States."
         primaryCtaText="Apply to Onboard"
         primaryCtaLink="become-vendor"
-        secondaryCtaText="Vendor Portal Login"
-        secondaryCtaLink="login"
+        secondaryCtaText="Contact Operations"
+        secondaryCtaLink="contact"
         initialImage="/images/Trush-Out-740x556.jpg"
         breadcrumbs="Vendor Network"
       />

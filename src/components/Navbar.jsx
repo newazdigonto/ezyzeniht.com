@@ -90,35 +90,12 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4 ml-auto">
-            <span className="hidden sm:inline-flex items-center gap-1 text-[11px] bg-emerald-950/80 text-emerald-300 px-2.5 py-0.5 rounded-full border border-emerald-800">
-              <ShieldCheck className="w-3 h-3 text-emerald-400" /> Insured & Verified Subcontractors
+            <span className="hidden sm:inline-flex items-center gap-1.5 text-[11px] bg-emerald-950/80 text-emerald-300 px-3 py-1 rounded-full border border-emerald-800 font-medium">
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> Insured & Verified Subcontractors
             </span>
-            
-            {currentUser ? (
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => handleNav(userRole === 'admin' ? 'dashboard' : userRole === 'vendor' ? 'vendor-portal' : 'client-portal')}
-                  className="flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-lg bg-zenith-orange text-navy-950 hover:bg-zenith-orangeHover transition-colors"
-                >
-                  <Sliders className="w-3.5 h-3.5" />
-                  <span>{userRole === 'admin' ? 'Admin Panel' : userRole === 'vendor' ? 'Vendor Portal' : 'Client Portal'}</span>
-                </button>
-                <button
-                  onClick={logout}
-                  className="text-[11px] text-slate-400 hover:text-red-400 px-2 py-1 rounded transition-colors"
-                >
-                  Sign Out
-                </button>
-              </div>
-            ) : (
-              <button
-                onClick={() => handleNav('login')}
-                className="flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-zenith-orange transition-all"
-              >
-                <Sliders className="w-3.5 h-3.5 text-zenith-orange" />
-                <span>Portal Login (Admin • Vendor • Client)</span>
-              </button>
-            )}
+            <span className="hidden md:inline-flex items-center gap-1.5 text-[11px] bg-navy-800 text-slate-300 px-3 py-1 rounded-full border border-slate-700 font-medium">
+              <Clock className="w-3 h-3 text-zenith-orange" /> Rapid 24h Response
+            </span>
           </div>
         </div>
       </div>
@@ -238,13 +215,13 @@ export default function Navbar() {
             >
               Request Service Now
             </button>
-            <button
-              onClick={() => handleNav(currentUser ? (userRole === 'admin' ? 'dashboard' : userRole === 'vendor' ? 'vendor-portal' : 'client-portal') : 'login')}
+            <a
+              href={`tel:${phone.replace(/[^0-9]/g, '')}`}
               className="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-2.5 rounded-lg text-center text-sm flex items-center justify-center gap-2 border border-slate-700"
             >
-              <Sliders className="w-4 h-4 text-zenith-orange" />
-              <span>{currentUser ? `${userRole?.toUpperCase()} PORTAL` : 'Portal Login (Admin • Vendor • Client)'}</span>
-            </button>
+              <Phone className="w-4 h-4 text-zenith-orange" />
+              <span>Call Dispatch: {phone}</span>
+            </a>
           </div>
         </div>
       )}
