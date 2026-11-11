@@ -1,0 +1,554 @@
+{
+  "company": {
+    "name": "EZY Zenith LLC",
+    "tagline": "Property Preservation, Maintenance & Listing Support Services",
+    "phone": "302-244-5523",
+    "email": "contact@ezyzenith.com",
+    "supportEmail": "info@ezyzenith.com",
+    "website": "www.ezyzenith.com",
+    "hours": "24/7 Coordination & Dispatch Support",
+    "address": "Nationwide Field Coordination | U.S. Registered Entity",
+    "logo": "/images/logo.png",
+    "experienceYears": "10+",
+    "stats": [
+      {
+        "label": "Years Experience",
+        "value": "10+"
+      },
+      {
+        "label": "Projects Completed",
+        "value": "5,400+"
+      },
+      {
+        "label": "U.S. States Covered",
+        "value": "Multi-Market"
+      },
+      {
+        "label": "Response Time",
+        "value": "< 24 Hours"
+      }
+    ]
+  },
+  "heroSlides": [
+    {
+      "id": "slide-1",
+      "badge": "Trusted Nationwide Field Services",
+      "title": "Property Preservation, Maintenance & Listing Support",
+      "subtitle": "EZY Zenith LLC helps Realtors, property managers, investors, and asset managers coordinate fast, reliable property maintenance, inspection repairs, turnover services, and preservation work across multiple U.S. markets.",
+      "image": "/images/Securing-Service-740x556.jpg",
+      "primaryCta": "Request Service",
+      "primaryLink": "request-service",
+      "secondaryCta": "Partner With Us",
+      "secondaryLink": "become-vendor",
+      "active": true
+    },
+    {
+      "id": "slide-2",
+      "badge": "For Realtors & Listing Agents",
+      "title": "Listing Preparation & Inspection Repair Coordination",
+      "subtitle": "Eliminate the headache of managing contractors before closing. We provide punch-list repairs, curb appeal cleanup, fast estimates, and certified trade coordination.",
+      "image": "/images/Painting-and-siding-repairs-740x556.jpg",
+      "primaryCta": "Send Inspection Repair List",
+      "primaryLink": "realtor-support",
+      "secondaryCta": "Schedule Intro Call",
+      "secondaryLink": "contact",
+      "active": true
+    },
+    {
+      "id": "slide-3",
+      "badge": "Fast Tenant Turnover",
+      "title": "Property Management Maintenance & Make-Ready Turns",
+      "subtitle": "Speed up unit turns with single-point dispatch. Complete interior refreshes, painting, flooring, locks, and detailed photo documentation upon completion.",
+      "image": "/images/Flooring-repairs-and-installations-740x556.jpg",
+      "primaryCta": "Request Turnover Support",
+      "primaryLink": "property-management",
+      "secondaryCta": "Explore Services",
+      "secondaryLink": "services",
+      "active": true
+    },
+    {
+      "id": "slide-4",
+      "badge": "Preservation & Asset Protection",
+      "title": "Securing, Trash-Out, Lawn Care & Winterization",
+      "subtitle": "Protect vacant, foreclosed, and distressed assets. Full board-up, rekey, debris removal, lawn maintenance, and compliance photo reporting.",
+      "image": "/images/Trush-Out-740x556.jpg",
+      "primaryCta": "Submit Work Order",
+      "primaryLink": "request-service",
+      "secondaryCta": "Check Coverage",
+      "secondaryLink": "coverage",
+      "active": true
+    }
+  ],
+  "services": [
+    {
+      "id": "serv-1",
+      "title": "Property Preservation",
+      "category": "Preservation",
+      "badge": "Core Specialty",
+      "image": "/images/Securing-Service-740x556.jpg",
+      "shortDescription": "Preserve, secure, and maintain vacant, foreclosed, or distressed properties with compliance photo reporting.",
+      "fullDescription": "We help preserve, secure, and maintain vacant or distressed properties. Services include initial inspections, lock changes, lockbox support, boarding coordination, lawn maintenance, debris removal, winterization/de-winterization, and comprehensive condition reporting.",
+      "features": [
+        "Initial & Ongoing Inspections",
+        "Lock Changes & Lockbox Installation",
+        "Emergency Boarding & Securing",
+        "Winterization & De-Winterization",
+        "Complete Before & After Photo Logs"
+      ],
+      "turnaround": "24-48 Hours",
+      "active": true
+    },
+    {
+      "id": "serv-2",
+      "title": "Listing Prep & Inspection Repairs",
+      "category": "Realtor Support",
+      "badge": "Highest Converting",
+      "image": "/images/Painting-and-siding-repairs-740x556.jpg",
+      "shortDescription": "Full punch-list repairs, cosmetic fixes, and contractor coordination before listing or closing.",
+      "fullDescription": "We help Realtors reduce the stress of managing contractors before listing, closing, inspection response, or repair deadlines. Support includes punch-list repairs, handyman coordination, curb appeal work, clean-outs, lock changes, exterior cleanup, and fast estimates.",
+      "features": [
+        "Home Inspection Report Punch-Lists",
+        "Curb Appeal & Exterior Cleanup",
+        "Drywall, Patching & Fresh Paint",
+        "Quick Repair Estimates for Closing Credits",
+        "Dedicated Coordinator per Property"
+      ],
+      "turnaround": "Fast Track Available",
+      "active": true
+    },
+    {
+      "id": "serv-3",
+      "title": "Tenant Turnover & Make-Ready",
+      "category": "Property Management",
+      "badge": "High Demand",
+      "image": "/images/Flooring-repairs-and-installations-740x556.jpg",
+      "shortDescription": "Rapid unit turnaround, repair punch lists, deep cleaning, and make-ready services for rental portfolios.",
+      "fullDescription": "We support property managers with turns, make-ready services, vendor follow-up, photo documentation, and work order processing. Minimize vacancy days with synchronized trade scheduling.",
+      "features": [
+        "Move-out Inspection Walkthroughs",
+        "Drywall, Paint & Trim Touch-ups",
+        "Hardware, Fixture & Lock Replacements",
+        "Deep Sanitization & Trash Removal",
+        "Photo Sign-off for Security Deposits"
+      ],
+      "turnaround": "3-5 Business Days",
+      "active": true
+    },
+    {
+      "id": "serv-4",
+      "title": "Trash-Out & Debris Removal",
+      "category": "Preservation",
+      "badge": "Heavy Duty",
+      "image": "/images/Trush-Out-740x556.jpg",
+      "shortDescription": "Interior and exterior cleanouts, bulk item hauling, shed removal, and broom-sweep sanitization.",
+      "fullDescription": "Fast debris and trash removal for foreclosures, tenant evictions, hoarding conditions, and abandoned properties. Complete hauling, disposal compliance, and hazardous material flagging.",
+      "features": [
+        "Full House Trash-Outs & Bulk Hauling",
+        "Broom-Clean Finish & Sanitization",
+        "Yard Waste, Branches & Tire Removal",
+        "Hazardous Material Documentation",
+        "Before/After Disposal Weight Slips & Photos"
+      ],
+      "turnaround": "24-72 Hours",
+      "active": true
+    },
+    {
+      "id": "serv-5",
+      "title": "Roofing Inspections & Repairs",
+      "category": "Maintenance",
+      "badge": "Subcontracted Trade",
+      "image": "/images/Roofing-740x556.jpg",
+      "shortDescription": "Tarping, emergency leak patching, shingle replacement, flashing repair, and roof condition documentation.",
+      "fullDescription": "Protect the asset envelope from water intrusion. We coordinate licensed roofing contractors for emergency tarping, missing shingle repairs, gutter apron fixes, and drone/ladder roof inspections.",
+      "features": [
+        "Emergency Blue Tarp Securing",
+        "Shingle & Flashing Repair Coordination",
+        "Chimney & Vent Boot Sealing",
+        "Leak Source Diagnostics & Photos",
+        "Qualified Licensed Subcontractor Work"
+      ],
+      "turnaround": "Same-Day Emergency Tarping",
+      "active": true
+    },
+    {
+      "id": "serv-6",
+      "title": "Landscaping & Lawn Maintenance",
+      "category": "Preservation",
+      "badge": "Curb Appeal",
+      "image": "/images/Landscaping-740x556.jpg",
+      "shortDescription": "Regular grass cuts, weed trimming, hedge pruning, lot clearing, and HOA violation abatement.",
+      "fullDescription": "Keep properties compliant with city codes, HOA regulations, and market presentation standards. Initial cut, bi-weekly recurring lawn maintenance, shrub pruning, and tree limb trimming away from roofs.",
+      "features": [
+        "Initial Overgrowth Cut & Lot Clearing",
+        "Bi-Weekly Recurring Mow & Edge",
+        "Shrub, Bush & Vine Trimming",
+        "HOA Code Violation Abatement",
+        "Time-Stamped Photo Verification"
+      ],
+      "turnaround": "Scheduled or Urgent",
+      "active": true
+    },
+    {
+      "id": "serv-7",
+      "title": "Power Washing Services",
+      "category": "Maintenance",
+      "badge": "Exterior Polish",
+      "image": "/images/Power-washing-driveways-sidewalks-and-building-exteriors-740x556.jpg",
+      "shortDescription": "High-pressure cleaning for driveways, sidewalks, siding, decks, and stucco to restore curb appeal.",
+      "fullDescription": "Remove dirt, algae, mold, and oil stains from exterior building surfaces, concrete driveways, walkways, fences, and patios. Essential for listing preparation and rental showings.",
+      "features": [
+        "Concrete Driveways, Steps & Sidewalks",
+        "Siding, Vinyl & Stucco Wash",
+        "Decks, Patios & Porches",
+        "Oil & Grease Stain Treatment",
+        "Eco-Safe Surface Cleaners"
+      ],
+      "turnaround": "1-2 Business Days",
+      "active": true
+    },
+    {
+      "id": "serv-8",
+      "title": "Interior Carpentry & Handyman",
+      "category": "Maintenance",
+      "badge": "Multi-Skill",
+      "image": "/images/Interior-Carpentry--740x556.jpg",
+      "shortDescription": "Repairing doors, windows, cabinets, baseboards, trim, shelving, and general structural cosmetic fixes.",
+      "fullDescription": "Skilled carpentry coordination for doors that stick, damaged subfloors, broken kitchen cabinets, closet rods, molding, stair railings, and general handyman punch-list items.",
+      "features": [
+        "Interior & Exterior Door Hanging & Locks",
+        "Window Hardware & Screen Repairs",
+        "Cabinet Hinge, Drawer & Shelf Repairs",
+        "Baseboards, Quarter-Round & Trim",
+        "Stair Treads & Handrail Securing"
+      ],
+      "turnaround": "2-3 Business Days",
+      "active": true
+    },
+    {
+      "id": "serv-9",
+      "title": "Flooring Repairs & Installation",
+      "category": "Maintenance",
+      "badge": "Value Booster",
+      "image": "/images/Flooring-repairs-and-installations-740x556.jpg",
+      "shortDescription": "LVP, laminate, carpet replacement, subfloor patch repair, and transition strips.",
+      "fullDescription": "Modernize tired floors or repair pet-damaged, water-damaged surfaces. We coordinate durable luxury vinyl plank (LVP), laminate, tile repairs, and carpet stretch/replacement.",
+      "features": [
+        "Luxury Vinyl Plank (LVP) Installation",
+        "Subfloor Rot & Squeak Repairs",
+        "Transition Strips & Thresholds",
+        "Carpet Removal & Haul-away",
+        "Tile Regrouting & Patching"
+      ],
+      "turnaround": "3-4 Business Days",
+      "active": true
+    },
+    {
+      "id": "serv-10",
+      "title": "Gutter Cleaning & Maintenance",
+      "category": "Maintenance",
+      "badge": "Preventative",
+      "image": "/images/Gutter-cleaning-and-maintenance-740x556.jpg",
+      "shortDescription": "Clearing debris, re-attaching loose gutters, downspout flushing, and gutter guard installation.",
+      "fullDescription": "Prevent water foundation damage and roof overflow. Comprehensive gutter cleaning, debris bagging, downspout snaking, and seam re-caulking.",
+      "features": [
+        "Full Gutter Debris Cleanout & Bagging",
+        "Downspout Flushing & Extension Checks",
+        "Spike & Ferrule Re-Securing",
+        "Seam & End Cap Leak Caulking",
+        "Before/After Aerial & Ladder Photos"
+      ],
+      "turnaround": "1-2 Days",
+      "active": true
+    },
+    {
+      "id": "serv-11",
+      "title": "Electrical Service Coordination",
+      "category": "Trades",
+      "badge": "Licensed Trades",
+      "image": "/images/Electrical-service-740x556.jpg",
+      "shortDescription": "Coordinating licensed electricians for panel inspections, GFCI upgrades, light fixtures, and smoke detectors.",
+      "fullDescription": "Ensure safety code compliance for home inspections and tenant move-ins. Coordinated with verified, licensed electrical subcontractors in your jurisdiction.",
+      "features": [
+        "GFCI Outlet Installation in Wet Areas",
+        "Smoke & Carbon Monoxide Detector Compliance",
+        "Light Fixtures, Ceiling Fans & Switches",
+        "Breaker Panel Troubleshooting Coordination",
+        "Subcontracted to Licensed Electricians"
+      ],
+      "turnaround": "Scheduled by Trade",
+      "active": true
+    },
+    {
+      "id": "serv-12",
+      "title": "Appliance Maintenance & Installs",
+      "category": "Maintenance",
+      "badge": "Turnover Essential",
+      "image": "/images/Appliance-maintenance-and-repairs-740x556.jpg",
+      "shortDescription": "Diagnostic coordination, refrigerator, stove, dishwasher, microwave repairs, hookups, and haul-away.",
+      "fullDescription": "Fast diagnostic and replacement coordination for essential household appliances. We handle delivery coordination, basic installations, testing, and old unit disposal.",
+      "features": [
+        "Stove, Range, Oven & Microwave Diagnostics",
+        "Refrigerator Defrost & Gasket Checks",
+        "Dishwasher Leak Check & Water Line Connect",
+        "Washer & Dryer Vent Cleaning / Hookup",
+        "Old Appliance Hauling & Recycling"
+      ],
+      "turnaround": "24-48 Hours",
+      "active": true
+    }
+  ],
+  "googleReviews": [
+    {
+      "id": "rev-1",
+      "author": "Sarah Jenkins",
+      "role": "Top Producer Realtor, Keller Williams",
+      "location": "Dallas, TX",
+      "rating": 5,
+      "date": "2 weeks ago",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "text": "EZY Zenith is my secret weapon for listing deadlines! When my client received a 14-item inspection repair amendment just 6 days before closing, EZY Zenith handled the entire punch-list, provided before/after photos for the buyer's agent, and saved our deal. Invaluable partner!",
+      "verified": true,
+      "source": "Google Review"
+    },
+    {
+      "id": "rev-2",
+      "author": "Marcus Sterling",
+      "role": "Senior Asset Manager, Vanguard Capital REO",
+      "location": "Atlanta, GA",
+      "rating": 5,
+      "date": "1 month ago",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "text": "Managing over 80 foreclosed assets across multiple counties requires speed, clear photos, and zero excuses. EZY Zenith secures properties within 24 hours, takes meticulous photo documentation, and their winterizations are flawless. Best coordination service in the U.S.",
+      "verified": true,
+      "source": "Google Review"
+    },
+    {
+      "id": "rev-3",
+      "author": "Elena Rodriguez",
+      "role": "Director of Property Management, Coastal Living Rentals",
+      "location": "Tampa, FL",
+      "rating": 5,
+      "date": "2 months ago",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "text": "Turnover season used to be a nightmare of calling 10 different contractors who never showed up. With EZY Zenith, I submit one work order and they coordinate drywall, painting, deep cleaning, and rekeying. Our average turnover downtime dropped from 14 days to 4 days.",
+      "verified": true,
+      "source": "Google Review"
+    },
+    {
+      "id": "rev-4",
+      "author": "David Chen",
+      "role": "Real Estate Investor & Flipping Partner",
+      "location": "Charlotte, NC",
+      "rating": 5,
+      "date": "3 months ago",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "text": "I bought a distressed 3-bedroom property with hoarding conditions. EZY Zenith did the full trash-out in 48 hours, landscaped the overgrown yard, and pressure washed the driveway. Professional, honest pricing, and constant updates.",
+      "verified": true,
+      "source": "Google Review"
+    },
+    {
+      "id": "rev-5",
+      "author": "Rachel Vance",
+      "role": "Managing Broker, Premier Realty Group",
+      "location": "Philadelphia, PA",
+      "rating": 5,
+      "date": "3 months ago",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+      "text": "Their communication is outstanding. In this business, knowing when a contractor is on-site and seeing immediate proof of work via time-stamped photos is everything. EZY Zenith sets the gold standard for property service coordination.",
+      "verified": true,
+      "source": "Google Review"
+    }
+  ],
+  "beforeAfterGallery": [
+    {
+      "id": "ba-1",
+      "title": "Foreclosure Trash-Out & Deep Clean",
+      "category": "Preservation",
+      "beforeImg": "/images/Trush-Out-740x556.jpg",
+      "afterImg": "/images/Cleaning-service-740x556.jpg",
+      "description": "Severe debris removal, full bulk trash-out, and commercial sanitization ready for appraiser walkthrough."
+    },
+    {
+      "id": "ba-2",
+      "title": "Curb Appeal & Overgrown Lawn Restoration",
+      "category": "Landscaping",
+      "beforeImg": "/images/Securing-Service-740x556.jpg",
+      "afterImg": "/images/Landscaping-740x556.jpg",
+      "description": "Cleared 4-foot weeds, trimmed trees away from roofline, edged sidewalks, and cleared HOA violations."
+    },
+    {
+      "id": "ba-3",
+      "title": "Exterior Siding & Pressure Washing Polish",
+      "category": "Exterior",
+      "beforeImg": "/images/Painting-and-siding-repairs-740x556.jpg",
+      "afterImg": "/images/Power-washing-driveways-sidewalks-and-building-exteriors-740x556.jpg",
+      "description": "Repaired loose siding boards, treated mildew, and power-washed the full exterior facade and driveway."
+    }
+  ],
+  "workflow": [
+    {
+      "step": "01",
+      "title": "Submit Request",
+      "description": "Client submits property details, photos, repair punch-list, or work order through our secure portal or call."
+    },
+    {
+      "step": "02",
+      "title": "Scope & Review",
+      "description": "We analyze urgency, access codes, lockbox location, municipality guidelines, and specific trade requirements."
+    },
+    {
+      "step": "03",
+      "title": "Estimate & Approval",
+      "description": "We provide clear, upfront pricing or coordinate certified vendor quotes with line-item detail."
+    },
+    {
+      "step": "04",
+      "title": "Dispatch & Execution",
+      "description": "Vetted, insured field contractors are dispatched with strict milestones and on-site check-in."
+    },
+    {
+      "step": "05",
+      "title": "Photo Report & Sign-off",
+      "description": "Comprehensive before/after photo documentation, completion notes, and final sign-off delivered to your inbox."
+    }
+  ],
+  "coverageStates": [
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "status": "Active Hub"
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "status": "Active"
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "status": "Active"
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "status": "Active"
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "status": "Active"
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "status": "Active"
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "status": "Active"
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "status": "Active"
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "status": "Active"
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "status": "Expanding"
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "status": "Expanding"
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "status": "Expanding"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you work with Realtors and listing agents?",
+      "answer": "Yes, absolutely! Realtor listing preparation, inspection repair list resolution, and closing support are core specialties. We handle buyer repair amendments, punch-lists, and cosmetic fixes on tight deadlines with full photo documentation."
+    },
+    {
+      "question": "Do you provide before and after photos?",
+      "answer": "Yes. Every single work order includes date-and-time stamped before, during, and after photos uploaded directly to your completion report for escrow verification, asset manager compliance, or security deposit deductions."
+    },
+    {
+      "question": "How are licensed trades handled (roofing, electrical, plumbing)?",
+      "answer": "EZY Zenith coordinates field services through qualified vendors and subcontractors. Any licensed trade work (electrical, HVAC, plumbing, structural roofing) is strictly performed by verified, qualified, licensed, and insured subcontractors where required by local and state law."
+    },
+    {
+      "question": "Can you support emergency or urgent property requests?",
+      "answer": "Yes. We offer rapid dispatch for securing vacant properties, emergency boarding, water shutoff, freeze prevention/winterization, and urgent 24-48 hour repair requests depending on vendor access and property location."
+    },
+    {
+      "question": "How do vendors and contractors join your network?",
+      "answer": "Qualified contractors can apply directly through our 'Become a Vendor' portal. Requirements include a valid W-9, General Liability & Workers' Compensation insurance, references, and demonstrated reliability in your local market."
+    }
+  ],
+  "leads": [
+    {
+      "id": "lead-1794395378571",
+      "createdAt": "2026-11-11T11:09:38.571Z",
+      "status": "New",
+      "name": "Test Lead Inspector",
+      "service": "Realtor Listing Prep & Inspection Repairs",
+      "phone": "302-555-1234",
+      "notes": "Test lead submission from verification script",
+      "email": "inspector@test.com",
+      "urgency": "Urgent (< 48 hrs)",
+      "address": "123 Ocean Drive, Wilmington, DE"
+    },
+    {
+      "id": "lead-1794389329837",
+      "createdAt": "2026-11-11T09:28:49.837Z",
+      "status": "New",
+      "service": "Realtor Listing Prep & Inspection Repairs",
+      "company": "ReMax Premier",
+      "name": "Jessica Miller",
+      "phone": "302-555-9988",
+      "urgency": "Urgent (< 48 hrs)",
+      "notes": "Need inspection punch-list completion before Friday closing.",
+      "email": "jmiller@remax.com",
+      "address": "742 Evergreen Terrace, Wilmington, DE"
+    },
+    {
+      "id": "lead-1",
+      "type": "service_request",
+      "createdAt": "2026-11-10T14:22:00Z",
+      "name": "Jonathan Vance",
+      "company": "Coldwell Banker Realty",
+      "email": "jvance@cbrealty.com",
+      "phone": "302-555-0192",
+      "address": "482 Highland Ave, Wilmington, DE",
+      "service": "Realtor Listing Prep & Inspection Repairs",
+      "urgency": "Urgent (< 48 hrs)",
+      "notes": "Home inspection response deadline this Friday. Need 3 GFCI outlets, drywall patch in hallway, and handrail secured.",
+      "status": "In Progress"
+    },
+    {
+      "id": "lead-2",
+      "type": "vendor_application",
+      "createdAt": "2026-11-09T18:10:00Z",
+      "name": "Carlos Mendez",
+      "company": "Tri-State Maintenance Pros LLC",
+      "email": "carlos@tristatemaintenance.com",
+      "phone": "404-555-8831",
+      "address": "Atlanta, GA Metro",
+      "service": "Trash-out, Lawn Care & Handyman",
+      "urgency": "Ready to Onboard",
+      "notes": "Experienced REO preservation crew with 3 trucks, W-9 and 2M GL insurance ready.",
+      "status": "New"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Minimalist Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ========================================================================= */
+/* ANIMATED BORDER UTILITIES (Using Logo Brand Colors: #0f2446 & #f5932d)   */
+/* ========================================================================= */
+
+/* 1. Animated Gradient Border Glow */
+.animated-gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.animated-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(90deg, #f5932d, #0f2446, #f5932d, #0f2446);
+  background-size: 300% 300%;
+  animation: gradientBorderMove 4s ease infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Dark version of animated gradient border */
+.animated-gradient-border-dark {
+  position: relative;
+  border-radius: 1rem;
+  background: #0f2446;
+}
+
+.animated-gradient-border-dark::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(90deg, #f5932d, rgba(255, 255, 255, 0.4), #f5932d, rgba(245, 147, 45, 0.2));
+  background-size: 300% 300%;
+  animation: gradientBorderMove 4s ease infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes gradientBorderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 2. Rotating Border Beam / Conic Animation */
+.border-beam-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 1px;
+}
+
+.border-beam-container::before {
+  content: '';
+  position: absolute;
+  inset: -150%;
+  background: conic-gradient(from 0deg, transparent 0 320deg, #f5932d 340deg, #0f2446 360deg);
+  animation: rotateBeam 5s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateBeam {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.border-beam-content {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: calc(1rem - 1px);
+}
+
+.border-beam-content-dark {
+  position: relative;
+  z-index: 1;
+  background: #0f2446;
+  border-radius: calc(1rem - 1px);
+}
+
+/* 3. Subtle minimalist card hover border illumination */
+.card-hover-illuminate {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #e2e8f0;
+}
+
+.card-hover-illuminate:hover {
+  border-color: #f5932d;
+  box-shadow: 0 12px 30px -10px rgba(15, 36, 70, 0.08), 0 0 0 1px rgba(245, 147, 45, 0.3);
+  transform: translateY(-2px);
+}
+
+/* 4. Glowing pill badge animation */
+.animated-pill {
+  position: relative;
+  border: 1px solid rgba(245, 147, 45, 0.3);
+  background: rgba(245, 147, 45, 0.08);
+  transition: all 0.3s ease;
+}
+
+.animated-pill:hover {
+  border-color: #f5932d;
+  box-shadow: 0 0 15px -3px rgba(245, 147, 45, 0.4);
+}
