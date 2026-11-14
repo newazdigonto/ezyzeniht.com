@@ -71,7 +71,7 @@ export default function PageHero({
   );
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#0c182b] via-[#0f2446] to-[#0a1628] text-white pt-36 sm:pt-40 md:pt-44 pb-14 sm:pb-18 overflow-hidden border-b border-slate-800">
+    <section className="relative w-full bg-gradient-to-b from-[#0c182b] via-[#0f2446] to-[#0a1628] text-white pt-28 sm:pt-32 md:pt-36 pb-12 sm:pb-14 overflow-hidden border-b border-slate-800">
       {/* BACKGROUND AMBIENT GLOW */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-zenith-orange/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-navy-800/40 rounded-full blur-3xl pointer-events-none" />

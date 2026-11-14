@@ -58,11 +58,11 @@ export default function Footer() {
               aria-label="EZY Zenith Home"
             >
               <img 
-                src="/images/logo-white.png" 
+                src="/images/logo-white-orange.png" 
                 alt="EZY Zenith" 
-                className="h-11 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
                 onError={(e) => {
-                  e.target.src = '/images/logo-color.png';
+                  e.target.src = '/images/logo-white.png';
                 }}
               />
             </button>

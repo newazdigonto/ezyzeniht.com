@@ -113,11 +113,11 @@ export default function Navbar() {
             aria-label="EZY Zenith Home"
           >
             <img 
-              src="/images/logo-color.png" 
+              src="/images/logo-white-orange.png" 
               alt="EZY Zenith" 
-              className="h-8 sm:h-9 md:h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-[0_1px_2px_rgba(255,255,255,0.75)]"
+              className="h-9 sm:h-10 md:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
               onError={(e) => {
-                e.target.src = '/images/logo.png';
+                e.target.src = '/images/logo-white.png';
               }}
             />
           </button>

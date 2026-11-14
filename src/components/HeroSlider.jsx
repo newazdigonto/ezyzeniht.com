@@ -7,9 +7,10 @@ import {
   ArrowRight, 
   Clock, 
   PhoneCall, 
-  FileCheck2,
   CheckCircle2,
-  Camera
+  Camera,
+  MapPin,
+  Wrench
 } from 'lucide-react';
 
 export default function HeroSlider() {
@@ -75,7 +76,7 @@ export default function HeroSlider() {
 
   return (
     <section 
-      className="relative w-full overflow-hidden bg-slate-950 text-white min-h-[580px] lg:min-h-[620px] xl:h-[calc(100vh-10px)] max-h-[760px] pt-24 sm:pt-28 pb-4 flex items-center justify-center"
+      className="relative w-full overflow-hidden bg-slate-950 text-white min-h-[580px] lg:h-[calc(100vh-20px)] lg:max-h-[720px] pt-20 sm:pt-24 pb-4 flex items-center justify-center"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -90,42 +91,42 @@ export default function HeroSlider() {
           <img
             src={slide.image}
             alt={slide.title}
-            className="w-full h-full object-cover object-center brightness-[0.94] contrast-[1.05]"
+            className="w-full h-full object-cover object-center brightness-[0.98] contrast-[1.04]"
             onError={(e) => {
               e.target.src = '/images/Securing-Service-740x556.jpg';
             }}
           />
-          {/* Gentle directional scrim only on the left text side, keeping the property photo vividly visible */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#07111e]/90 via-[#0a182c]/65 to-black/20 lg:w-[60%] w-full pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#07111e]/85 via-transparent to-black/25 pointer-events-none" />
+          {/* Subtle directional scrim only on the left text side, keeping the property photo vividly visible */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#07111e]/92 via-[#0a182c]/70 to-transparent lg:w-[55%] w-full pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#07111e]/85 via-transparent to-black/30 pointer-events-none" />
         </div>
       ))}
 
-      {/* CONTENT WRAPPER - COMPACT ABOVE-THE-FOLD FIT */}
+      {/* CONTENT WRAPPER - COMPACT ABOVE-THE-FOLD FIT (NO SCROLL NEEDED) */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-2 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
-          {/* LEFT SLIDE TEXT (Col 1-7) */}
-          <div className="lg:col-span-7 space-y-3.5 xl:space-y-4">
+          {/* LEFT SLIDE TEXT & CONTROLS (Col 1-7) */}
+          <div className="lg:col-span-7 space-y-3 xl:space-y-3.5">
             
             {/* ANIMATED BORDER BADGE */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0f2446]/85 border border-zenith-orange/60 text-zenith-orange text-[11px] sm:text-xs font-semibold tracking-wide shadow-sm backdrop-blur-md animate-border-pulse">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0c1a2e]/90 border border-zenith-orange/60 text-zenith-orange text-[11px] sm:text-xs font-semibold tracking-wide shadow-sm backdrop-blur-md animate-border-pulse">
               <span className="w-2 h-2 rounded-full bg-zenith-orange animate-ping" />
-              <span>{currentSlide.badge || 'Property Preservation • Maintenance • Listing Support'}</span>
+              <span>{currentSlide.badge || 'Field Coordination • Maintenance • Listing Support'}</span>
             </div>
 
             {/* HEADLINE */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[36px] xl:text-[40px] font-black text-white leading-[1.18] tracking-tight drop-shadow-md">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[34px] xl:text-[38px] font-black text-white leading-[1.16] tracking-tight drop-shadow-md">
               {currentSlide.title}
             </h1>
 
             {/* SUBHEADLINE */}
-            <p className="text-xs sm:text-sm text-slate-200 leading-relaxed max-w-xl font-normal drop-shadow line-clamp-3">
+            <p className="text-xs sm:text-sm text-slate-200 leading-relaxed max-w-xl font-normal drop-shadow line-clamp-2">
               {currentSlide.subtitle}
             </p>
 
             {/* CTA BUTTONS */}
-            <div className="flex flex-wrap items-center gap-3 pt-1">
+            <div className="flex flex-wrap items-center gap-3 pt-0.5">
               <button
                 onClick={() => navigateTo(currentSlide.primaryLink || 'request-service')}
                 className="bg-zenith-orange hover:bg-zenith-orangeHover text-navy-950 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow-accent transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95 flex items-center gap-2 group"
@@ -143,53 +144,78 @@ export default function HeroSlider() {
             </div>
 
             {/* KEY TRUST BULLETS UNDER HERO */}
-            <div className="flex flex-wrap items-center gap-y-1.5 gap-x-4 pt-1 text-[11px] sm:text-xs text-slate-300">
+            <div className="flex flex-wrap items-center gap-y-1 gap-x-4 pt-0.5 text-[11px] sm:text-xs text-slate-300">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-zenith-orange" />
-                <span>Single Point of Coordination</span>
+                <span>Single Point of Dispatch</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-zenith-orange" />
-                <span>Detailed Photo Documentation</span>
+                <span>Time-Stamped Photo Proof</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-zenith-orange" />
-                <span>Qualified Subcontractors</span>
+                <span>Verified Trade Network</span>
               </div>
+            </div>
+
+            {/* INTERACTIVE SERVICE & PHOTO SELECTOR PILLS (ZERO OVERLAP WITH FORM) */}
+            <div className="pt-2 flex flex-wrap items-center gap-2">
+              <span className="text-[11px] font-bold text-slate-300 flex items-center gap-1 mr-1">
+                <Camera className="w-3.5 h-3.5 text-zenith-orange" />
+                <span>Field Services:</span>
+              </span>
+              {slides.map((s, idx) => (
+                <button
+                  key={s.id || idx}
+                  onClick={() => setCurrentIndex(idx)}
+                  className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold transition-all duration-200 border ${
+                    idx === currentIndex
+                      ? 'bg-zenith-orange text-navy-950 border-zenith-orange shadow-md shadow-zenith-orange/30 font-bold scale-105'
+                      : 'bg-black/45 text-slate-300 border-white/20 hover:bg-white/15 hover:text-white backdrop-blur-md'
+                  }`}
+                  title={s.title}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-current" />
+                  <span className="truncate max-w-[130px]">
+                    {s.badge ? s.badge.split('•')[0].trim() : `Service ${idx + 1}`}
+                  </span>
+                </button>
+              ))}
             </div>
 
           </div>
 
           {/* RIGHT LEAD COLLECT FORM IN HERO SECTION (COMPACT & SLEEK) */}
           <div className="lg:col-span-5">
-            <div className="animated-gradient-border-dark shadow-xl">
-              <div className="bg-[#0f2446]/92 rounded-2xl p-4 sm:p-5 backdrop-blur-xl text-slate-200 space-y-2.5">
+            <div className="animated-gradient-border-dark shadow-2xl max-w-[420px] ml-auto w-full">
+              <div className="bg-[#0b1728]/95 rounded-2xl p-4 sm:p-5 backdrop-blur-xl text-slate-200 space-y-2.5 border border-white/10">
                 
                 {/* HEADER */}
-                <div className="flex items-center justify-between pb-2 border-b border-slate-700/80">
+                <div className="flex items-center justify-between pb-2 border-b border-slate-700/60">
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                     <span className="text-[11px] uppercase font-extrabold tracking-wider text-emerald-400">
-                      Instant Dispatch Desk
+                      Rapid Dispatch Desk
                     </span>
                   </div>
-                  <span className="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded font-mono">
+                  <span className="text-[10px] bg-slate-800/90 text-slate-300 px-2 py-0.5 rounded font-mono border border-slate-700">
                     24/7 Available
                   </span>
                 </div>
 
                 <div>
                   <h3 className="text-base sm:text-lg font-black text-white tracking-tight">
-                    Fast Property Work Order
+                    Request Fast Property Service
                   </h3>
                   <p className="text-[11px] text-slate-300">
-                    Get rapid pricing, contractor scheduling & photo updates.
+                    Get upfront pricing, scheduled dispatch & photo reports.
                   </p>
                 </div>
 
                 {/* FORM OR SUCCESS STATE */}
                 {leadSubmitted ? (
-                  <div className="py-6 text-center space-y-2.5 bg-slate-900/60 rounded-xl p-4 border border-emerald-800/80">
+                  <div className="py-6 text-center space-y-2 bg-slate-900/60 rounded-xl p-4 border border-emerald-800/80">
                     <div className="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto border border-emerald-500/40">
                       <CheckCircle2 className="w-5 h-5" />
                     </div>
@@ -215,7 +241,7 @@ export default function HeroSlider() {
                     </button>
                   </div>
                 ) : (
-                  <form onSubmit={handleHeroLeadSubmit} className="space-y-2.5 text-xs">
+                  <form onSubmit={handleHeroLeadSubmit} className="space-y-2 text-xs">
                     <div>
                       <label className="block font-bold text-slate-300 mb-0.5 text-[11px]">
                         Property Address *
@@ -325,7 +351,7 @@ export default function HeroSlider() {
         </div>
       </div>
 
-      {/* SLIDER CONTROLS (ARROWS & DOTS & THUMBNAILS - COMPACT AT BOTTOM) */}
+      {/* SLIDER NAVIGATION ARROWS & BOTTOM-LEFT PROGRESS BAR */}
       {slides.length > 1 && (
         <>
           <button
@@ -343,55 +369,28 @@ export default function HeroSlider() {
             <ChevronRight className="w-5 h-5" />
           </button>
 
-          {/* DOTS INDICATOR */}
-          <div className="absolute bottom-3 left-4 sm:left-10 z-20 flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/15">
-            {slides.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`transition-all duration-300 rounded-full ${
-                  idx === currentIndex 
-                    ? 'w-6 h-1.5 bg-zenith-orange' 
-                    : 'w-1.5 h-1.5 bg-white/40 hover:bg-white/80'
-                }`}
-                aria-label={`Go to slide ${idx + 1}`}
-              />
-            ))}
-          </div>
-
-          {/* PHOTO THUMBNAIL PREVIEWS */}
-          <div className="hidden lg:flex items-center gap-2 absolute bottom-2.5 right-4 sm:right-10 z-20 bg-slate-950/85 backdrop-blur-md p-1.5 rounded-xl border border-white/20 shadow-xl">
-            <div className="text-[10px] font-bold text-slate-300 px-1.5 flex items-center gap-1">
-              <Camera className="w-3 h-3 text-zenith-orange" />
-              <span>Photos:</span>
-            </div>
-            {slides.map((s, idx) => (
-              <button
-                key={s.id || idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`group relative rounded-lg overflow-hidden border transition-all duration-300 ${
-                  idx === currentIndex 
-                    ? 'border-zenith-orange scale-105 shadow-md shadow-zenith-orange/30 ring-1 ring-zenith-orange/50' 
-                    : 'border-white/20 opacity-70 hover:opacity-100 hover:border-white/50'
-                }`}
-                title={s.title}
-              >
-                <img 
-                  src={s.image} 
-                  alt={s.title} 
-                  className="w-13 h-8.5 object-cover"
-                  onError={(e) => { e.target.src = '/images/Securing-Service-740x556.jpg'; }}
+          {/* ELEGANT BOTTOM-LEFT SLIDE INDICATOR (ZERO OVERLAP WITH FORM) */}
+          <div className="absolute bottom-3 left-4 sm:left-10 z-20 flex items-center gap-2 bg-black/50 backdrop-blur-md px-3.5 py-1 rounded-full border border-white/15 text-[11px] text-slate-300">
+            <span className="font-mono text-zenith-orange font-bold">0{currentIndex + 1}</span>
+            <span className="text-slate-500">/</span>
+            <span className="font-mono text-slate-400">0{slides.length}</span>
+            <div className="flex items-center gap-1.5 ml-1">
+              {slides.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentIndex(idx)}
+                  className={`transition-all duration-300 rounded-full ${
+                    idx === currentIndex 
+                      ? 'w-5 h-1.5 bg-zenith-orange' 
+                      : 'w-1.5 h-1.5 bg-white/35 hover:bg-white/70'
+                  }`}
+                  aria-label={`Go to slide ${idx + 1}`}
                 />
-                <div className={`absolute inset-0 transition-opacity ${idx === currentIndex ? 'bg-transparent' : 'bg-black/30 group-hover:bg-transparent'}`} />
-                <span className="absolute bottom-0 inset-x-0 bg-black/85 text-[8px] text-white font-semibold text-center truncate px-1 py-0.2">
-                  {s.badge ? s.badge.split(' ')[0] : `Photo ${idx+1}`}
-                </span>
-              </button>
-            ))}
+              ))}
+            </div>
           </div>
         </>
       )}
     </section>
   );
 }
-
