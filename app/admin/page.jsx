@@ -347,6 +347,11 @@ export default function AdminPage() {
               <span>Exit</span>
             </button>
           </div>
+
+          <div className="pt-2 px-2 text-[10px] text-slate-400 flex items-center justify-between border-t border-slate-200/60 font-mono">
+            <span>Portal Version</span>
+            <span className="font-bold text-zenith-orange bg-amber-50 px-1.5 py-0.2 rounded border border-amber-200">v1.7.0</span>
+          </div>
         </div>
 
       </aside>

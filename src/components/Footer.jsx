@@ -193,12 +193,16 @@ export default function Footer() {
           <div>
             © {new Date().getFullYear()} EZY Zenith LLC. All rights reserved. Registered U.S. Business.
           </div>
-          <div className="flex items-center gap-4 text-slate-300">
+          <div className="flex items-center gap-3 sm:gap-4 text-slate-300">
             <span>Property Preservation</span>
             <span>•</span>
             <span>Realtor Support</span>
             <span>•</span>
             <span>Maintenance Coordination</span>
+            <span>•</span>
+            <span className="font-mono text-[10px] text-zenith-orange bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700 font-bold">
+              v1.7.0
+            </span>
           </div>
         </div>
       </div>
