@@ -106,22 +106,20 @@ export default function Navbar() {
       }`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           
-          {/* OFFICIAL BRAND 2-COLOR LOGO (Navy + Orange) */}
+          {/* OFFICIAL BRAND 2-COLOR LOGO (No White Background) */}
           <button 
             onClick={() => handleNav('home')} 
-            className="flex items-center focus:outline-none group py-0.5"
+            className="flex items-center focus:outline-none group py-1"
             aria-label="EZY Zenith Home"
           >
-            <div className="bg-white px-3 py-1 rounded-xl shadow-sm border border-white/80 group-hover:border-zenith-orange group-hover:shadow transition-all duration-300 flex items-center h-10 sm:h-11">
-              <img 
-                src="/images/logo-color.png" 
-                alt="EZY Zenith" 
-                className="h-7 sm:h-8 md:h-8.5 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
-                onError={(e) => {
-                  e.target.src = '/images/logo.png';
-                }}
-              />
-            </div>
+            <img 
+              src="/images/logo-color.png" 
+              alt="EZY Zenith" 
+              className="h-8 sm:h-9 md:h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-[0_1px_2px_rgba(255,255,255,0.75)]"
+              onError={(e) => {
+                e.target.src = '/images/logo.png';
+              }}
+            />
           </button>
 
           {/* DESKTOP NAV LINKS */}
